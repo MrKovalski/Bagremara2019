@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap');
+@import '~react-agenda/build/styles.css';
+@import '~react-datetime/css/react-datetime.css';
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: #291720;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer{
+    height: calc(100vh - 50px);
+}
+
+/*=============================================
+=            index            =
+=============================================*/
+
+
+.frontLayout{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: calc(100vh - 50px);
+}
+
+.eventDate{
+    text-align: center;
+    color:  #00f0ff;
+    grid-area: 2 / 2 / 2 / 4;
+    font-size: 2.5vw;
+}
+
+.eventTitle{
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6vw;
+    color: white;
+    grid-area: 3 / 1 / 3 / 5;
+}
+
+.eventTitle span{
+    color:  #00f0ff;
+}
+.prijaviSeBTN{
+    grid-area: 5 / 2 / 5 / 3;
+    width: 250px;
+    height: 60px;
+}
+
+.rasporedBTN{
+    grid-area: 5 / 3 / 5 / 4;
+    width: 250px;
+    height: 60px;
+}
+.timerLayout{
+    grid-area: 6 / 1 / 7 / 5;
+    font-size: 3vw;
+}
+.timeUntil{
+    
+}
+.timeUntil span{
+    color: #00f0ff;
+    
+}
+.p-button-icon{
+    font-size: 90px;
+}
+
+.p-button-text{
+    font-size: 1.4em;
+    text-align: center;
+    align-content: center;
+
+}
+
+/*=====  End of index  ======*/
+
+
+
+/*=============================================
+=            Navbar            =
+=============================================*/
+
+.navTitle{
+    color: white;
+    font-size: 1.2em;
+}
+.navTitle span{
+    color: #00f0ff;
+}
+.navTitle:hover{
+    text-decoration: none;
+}
+.navItem{
+    color: white;
+}
+.navItem:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 5px #00f0ff;
+    margin-bottom: 0;
+}
+.eventNav{
+    height:50px;
+
+}
+/*=====  End of Navbar  ======*/
+
+
+/*=============================================
+=            Raspored            =
+=============================================*/
+
+.rasporedTitle{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.rasporedLayout{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.kalendar{
+    grid-area: 2 / 1 / 7 / 2; 
+}
+
+/*=====  End of Raspored  ======*/
+
+
+/*=============================================
+=            Prijava            =
+=============================================*/
+.prijavaLayout{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-content: center;
+    padding:10px;
+    height: calc(100vh - 50px);
+}
+.prijavaTitle{
+    font-size: 2.5em;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.prijavaWindow{
+    grid-area: 2 / 1 / 11 / 2;
+    
+}
+
+/*=====  End of Prijava  ======*/
+
+/*=============================================
+=            smestaj            =
+=============================================*/
+
+.smestajLayout{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: ". title title ." "cards cards cards cards";    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+}
+.smestajTitle{
+    font-size: 2.5em;
+    grid-area: title;
+}
+.smestajCards{
+    grid-area: cards;
+    
+}
+
+.cardsLayout{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.smestajCard{
+    width: 300px;
+    margin: 15px;
+}
+
+/*=====  End of smestaj  ======*/
+
+/*=============================================
+=            govornici            =
+=============================================*/
+
+.govorniciLayout{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: ". title title ." "cards cards cards cards";
+    padding:20px;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+}
+.govorniciTitle{
+    font-size: 2.5em;
+    grid-area: title;
+   
+}
+.govorniciCards{
+    grid-area: cards;
+    background-color: white;
+}
+
+/*=====  End of govornici  ======*/
+
+
+/*=============================================
+=            Informacije            =
+=============================================*/
+.informacijeLayout{
+    display: grid; 
+grid-template-columns: 1fr; 
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+width:100%;
+height: 100vh;
+align-items: center;
+}
+.informacijeTitle{
+    margin: 10px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+.informacijeText{
+    font-size: 3em;
+    grid-area: 3 / 1 / 8 / 2;
+}
+.kontaktText{
+    font-size: 2em;
+    color: #00f0ff;
+    grid-area: 8 / 1 / 11 / 2;
+}
+
+/*=====  End of Informacije  ======*/
+
+
+
