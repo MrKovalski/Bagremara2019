@@ -15,7 +15,8 @@ class Header extends Component {
                         <Nav.Link as={Link} to="/informacije">INFORMACIJE</Nav.Link>
                         <Nav.Link as={Link} to="/smestaj">SMEŠTAJ</Nav.Link >
                         <Nav.Link as={Link} to="/radionice">RADIONICE</Nav.Link>
-                        <Nav.Link as={Link} to="/raspored">RASPORED</Nav.Link>    
+                        <Nav.Link as={Link} to="/raspored">RASPORED</Nav.Link>
+                        <Nav.Link as={Link} to="/poruke">PORUKE</Nav.Link>    
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>

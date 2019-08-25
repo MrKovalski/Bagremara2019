@@ -6,7 +6,7 @@ export default () => (
     <div>
         <MainLayout>
             <div className="rasporedLayout">
-                <h1 className="rasporedTitle">RASPORED DEŠAVANJA</h1>
+                <h1 className="rasporedTitle">RASPORED</h1>
                 <div className="kalendar">
                     <KalendarDesavanja />
                 </div>

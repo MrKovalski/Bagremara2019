@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap');
-@import '~react-agenda/build/styles.css';
-@import '~react-datetime/css/react-datetime.css';
+@import url('../../node_modules/primereact/resources/themes/nova-light/theme.css');
+@import url('../../node_modules/primereact/resources/primereact.min.css');
+@import url('../../node_modules/primeicons/primeicons.css');
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
 
 html, body{
     height: 100%;
@@ -62,9 +65,7 @@ html, body{
     grid-area: 6 / 1 / 7 / 5;
     font-size: 3vw;
 }
-.timeUntil{
-    
-}
+
 .timeUntil span{
     color: #00f0ff;
     
@@ -108,34 +109,40 @@ html, body{
     margin-bottom: 0;
 }
 .eventNav{
-    height:50px;
+    height:55px;
 
 }
+
+
 /*=====  End of Navbar  ======*/
 
 
 /*=============================================
 =            Raspored            =
 =============================================*/
+.rasporedLayout{
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 50px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
 
 .rasporedTitle{
     font-size: 2.5em;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.rasporedLayout{
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;    
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+    grid-area: 1 / 2 / 2 / 4;
+    
 }
 
 .kalendar{
-    grid-area: 2 / 1 / 7 / 2; 
+    grid-area: 2 / 1 / 7 / 5; 
+    background-color: white;
+    color: black;
 }
 
 /*=====  End of Raspored  ======*/
@@ -260,7 +267,15 @@ align-items: center;
     grid-area: 8 / 1 / 11 / 2;
 }
 
+.informacija{
+    margin-top: 15px;
+}
+
 /*=====  End of Informacije  ======*/
 
-
+.porukeStyle{
+    
+    width: 100vw;
+    height: calc(100vh - 70px);
+}
 
